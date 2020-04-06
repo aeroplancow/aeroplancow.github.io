@@ -229,6 +229,10 @@ footer {
 	.section {
 		padding-top: 70vh;
 	}
+
+	.last {
+		height: 232vh;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -246,11 +250,20 @@ footer {
 		font-size: 13px;
 	}
 
+
+	.last {
+		height: 205vh;
+	}
+
 }
 
 @media screen and (max-width: 500px) {
 	h1, p, a {
 		font-size: 12px;
+	}
+
+	footer {
+		padding-bottom: 15px;
 	}
 
 	#novired {
@@ -267,6 +280,15 @@ footer {
 
 	.copy {
 		bottom: 15px;
+	}
+
+	.section {
+		height: 100vh;
+		padding-top: 46vh;
+	}
+
+	.last {
+		height: 190vh;
 	}
 
 
