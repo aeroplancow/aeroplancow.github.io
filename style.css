@@ -10,6 +10,8 @@
 	box-sizing: border-box;
 
 	cursor: url(cursor/cursor.png), auto;
+
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
