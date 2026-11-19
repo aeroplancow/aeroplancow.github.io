@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
 <title>TFD</title>
-
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,35 +19,25 @@
 
 <div class="main">
 
-	<div class="empty"></div>
+<header>
+    <a href="https://lukakustudic.com/" 
+       target="_blank"
+       data-image="images/london.jpg">London -</a>
 
-	<nav class="desk">
-		<p>London</p>
-		<div class="line"></div>
-		<a href="https://lukakustudic.com/" target="_blank" id="lk">Rotterdam</a>
-		<div class="line"></div>
-		<a href="https://nemanjakarisic.com/" target="_blank" id="nk">Novi Sad</a>
-	</nav>
+    <a href="index_k.html" 
+       target="_blank"
+       data-image="images/rotterdam.jpg">Rotterdam -</a>
 
+    <a href="https://nemanjakarisic.com/" 
+       target="_blank"
+       data-image="images/novi-sad.jpg">Novi Sad</a>
+</header>
 
-
-		<nav class="mob">
-		<p>LDN</p>
-		<div class="line"></div>
-		<a href="https://lukakustudic.com/" target="_blank" id="lk">R'DAM</a>
-		<div class="line"></div>
-		<a href="https://nemanjakarisic.com/" target="_blank" id="nk">NS</a>
-	</nav>
+</div>
 
 
-	<p class="about">
-		A collaborative design practice working across branding, visual identity, and art direction. <br id="delete">Established and operating from the belief that good design exists somewhere between restraint and intent.
-		<br>
-		<a href="#">Enquiries and commisions: contact@taxfreedesign.nl</a>
-</p>
-
-
-
+<div class="image-preview">
+    <img src="" alt="">
 </div>
 
 
@@ -57,13 +45,26 @@
 
 <script>
 
+$(document).ready(function() {
 
+    $('header a').hover(function() {
+
+        var image = $(this).data('image');
+
+        $('.image-preview img')
+            .attr('src', image)
+            .fadeIn(150);
+
+    }, function() {
+
+        $('.image-preview img')
+            .fadeOut(150);
+
+    });
+
+});
 
 </script>
 
 </body>
 </html>
-
-
-
-
